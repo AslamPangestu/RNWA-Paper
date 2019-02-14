@@ -23,14 +23,8 @@ const Splash = ({
           value={password}
           onChangeText={changePassword}
         />
-        <Button
-          icon={() => (
-            <Icon name="ios-person" size={30} color="#4F8EF7" />
-          )}
-          mode="contained"
-          onPress={doLogin}
-        >
-          web
+        <Button icon="add-a-photo" mode="contained" onPress={doLogin}>
+          WEb
         </Button>
       </View>
     )}
