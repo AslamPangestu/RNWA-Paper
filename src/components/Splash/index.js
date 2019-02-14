@@ -1,7 +1,6 @@
 import React from "react";
 import { Platform, View } from "react-native";
-import { TextInput, Button } from "react-native-paper";
-import Icon from 'react-native-vector-icons/Ionicons';
+import { TextInput, Button, Avatar } from "react-native-paper";
 
 const Splash = ({
   username,
@@ -13,6 +12,7 @@ const Splash = ({
   <View>
     {Platform.OS === "web" && (
       <View>
+        <Avatar.Image style={{alignSelf:'center'}} size={150} source={require("../../assets/images/indomie.jpg")} />
         <TextInput
           label="Username"
           value={username}
@@ -30,6 +30,7 @@ const Splash = ({
     )}
     {Platform.OS !== "web" && (
       <View>
+        <Avatar.Image size={24} source={require("../../assets/images/indomie.jpg")} />
         <TextInput
           label="Username"
           value={username}
