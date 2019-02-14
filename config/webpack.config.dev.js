@@ -360,7 +360,7 @@ module.exports = {
       },
       {
         test: /\.ttf$/,
-        loader: "url-loader", // or directly file-loader
+        loader: "file-loader", // or directly file-loader
         include: path.resolve(__dirname, "node_modules/react-native-vector-icons"),
       },
       // ** STOP ** Are you adding a new loader?
